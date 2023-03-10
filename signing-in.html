@@ -1,0 +1,74 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(192, 233, 255);  
+}  
+button {   
+       background-color: #9daf4c;   
+       width: 100%;  
+        color: rgb(20, 20, 19);   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: solid black 2px;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Welcome to our System </h1> </center>   
+    <form>  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+            <label>Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+            <button type="submit">Login</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>   
+            Forgot <a href="#"> password? </a>   
+        </div>   
+        <div class="center">
+            <div id="captchaBackground">
+            <canvas id="captcha">captcha text</canvas>
+            <input id="textBox" type="text" name="text">
+            <div id="buttons">
+            <input id="submitButton" type="submit">
+            <button id="refreshButton" type="submit">Refresh</button>
+            </div>
+            <span id="output"></span>
+            </div>
+            </div>
+            <script src="script.js"></script>
+    </form>     
+</body>     
+</html>  
