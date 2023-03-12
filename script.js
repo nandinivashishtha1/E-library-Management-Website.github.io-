@@ -1,9 +1,9 @@
 function myfunction(){
-    window.location.href="http://127.0.0.1:5500/flex/main.html";
+    window.location.href="main.html";
 }
 
 function myfunction2(){
-    window.location.href="http://127.0.0.1:5500/flex/signin.html";
+    window.location.href="signin.html";
 }
 
 function Validate(){
@@ -11,7 +11,7 @@ var username=document.getElementById("username").value;
 var password=document.getElementById("password").value;
 
 if(username=="Nandini_V" && password=="nan34"){
-window.open("http://127.0.0.1:5500/flex/admin.html");
+window.open("admin.html");
 }
 
 
@@ -23,7 +23,7 @@ alert("You have entered an incorrect password");
 function logout(){
 
 if(window.confirm("Are you sure you want to logout?")){
-window.location.href="http://127.0.0.1:5500/flex/index.html";
+window.location.href="index.html";
 }
 }
 
